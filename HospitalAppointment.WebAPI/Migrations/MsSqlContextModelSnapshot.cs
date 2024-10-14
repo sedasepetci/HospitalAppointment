@@ -48,7 +48,7 @@ namespace HospitalAppointment.WebAPI.Migrations
 
                     b.HasIndex("DoctorId");
 
-                    b.ToTable("Appointments");
+                    b.ToTable("Appointments", (string)null);
                 });
 
             modelBuilder.Entity("HospitalAppointment.WebAPI.Models.Doctor", b =>
@@ -74,7 +74,7 @@ namespace HospitalAppointment.WebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Doctors");
+                    b.ToTable("Doctors", (string)null);
                 });
 
             modelBuilder.Entity("HospitalAppointment.WebAPI.Models.Appointment", b =>
